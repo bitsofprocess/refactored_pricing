@@ -13,45 +13,64 @@ body {
     background-color: var(--ltgray);
     font-family: 'HelveticaNeue', sans-serif;
 }
+.header {
+    text-align: center;
+}
 h1 {
     color: var(--dkblue);
     font-size: 40px;
     font-weight: 900;
+    margin-bottom: 2rem;
 }
 h2 {
     color: var(--dkgray);
     font-size: 20px;
 }
 .pricing-table {
-    outline: .25rem solid green;
+    background-color: var(--white);
+    /* outline: .25rem solid green; */
     display: flex;
+    position: relative;
     z-index: -1;
-    margin: 10% 12% 15%;
+    margin: 4% 20%;
     border-radius: 26px;
+    /* max-width: 62rem;
+    max-height: 39rem; */
 }
 .pricing-table > * {
     flex: 1;
 }
 .platform-card {
-    outline: .25rem solid red;
+    background-color: var(--white);
+    /* outline: .25rem solid red; */
     display: flex;
     z-index: 1;
     margin: auto;
     border-radius: 26px;
+    padding: 3rem 2rem 0rem;
+    /* position: relative; */
+    align-self: stretch;
+    height: 38rem;
+    width: 20rem;
 }
 .popular-card {
-    outline: .25rem solid purple;
+    /* outline: .25rem solid purple; */
     display: flex;
     z-index: 1;
     margin: auto;
+    height: 38rem;
+    width: 20rem;
+    padding: 1.2rem; 
 }
 .event-card {
-    outline: .25rem solid blue;
+    border-radius: 26px;
+    /* position: relative; */
+    padding: 3rem 2rem 0rem;
+    height: 38rem;
+    width: 20rem;
     display: flex;
     z-index: 1;
-    margin: auto;
 }
-
 
 /* .content {
     outline: .05rem solid purple;
@@ -73,31 +92,45 @@ h2 {
     color: var(--dkblue);
     font-size: 1.86rem;
     font-weight: 900;
+    margin-bottom: 0rem;
 }
 .details {
     color: var(--dkgray);
     font-weight: 500;
+    margin-bottom: 2rem;
 }
 .features ul {
     color: var(--dkgray);
     font-weight: 500;
     list-style: none;
     list-style-position: outside;
+    padding-left: 0rem;
+    margin-bottom: 5rem;
 }
 .features li {
     font-weight: 500;
+    margin: 1rem;
+    display: flex;
+    margin-left: 0rem;
 }
 .features li::before {
     content: url('images/gray-dark-check.svg');
+    padding: 0rem 0.6rem 0rem 0rem;
 }
 .features .white li::before {
     content: url('images/white-check-darkbg.svg');
 }
-.btn {
+.features .btn {
     background-color: var(--dkgray);
     color: var(--dkblue);
+    font-weight: 700;
     text-decoration: none;
     border-radius: 8px;
+    width: 25rem;
+    height: 1.6rem;
+    padding: 1rem 2rem;
+    position: relative;
+    align-self: center;
 }
 .trial {
     color: var(--dkgray);
@@ -115,12 +148,17 @@ h2 {
     background-size: cover;
     border-radius: 5px;
     box-shadow: 0px 27px 32px 0px;
+    position: relative;
+    top: -2rem;
+    z-index: 2;
+    max-width: 22rem;
+    max-height: 37rem;
 }
 .popular-tag {
     font-size: 0.67rem;
     width: 8.6rem;
     height: 2rem;
-    margin-left: 7rem;
+    margin-left: 8.5rem;
     background: var(--purple);
     color: var(--white);
     border-radius: 4px;
@@ -139,6 +177,4 @@ h2 {
     font-weight: 700;
     text-decoration: none;
 }
-.event-card {
-    border-radius: 26px;
-}
+
