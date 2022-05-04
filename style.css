@@ -12,6 +12,8 @@ html {
 body {
     background-color: var(--ltgray);
     font-family: 'HelveticaNeue', sans-serif;
+    justify-content: center;
+    align-content: center;
 }
 .header {
     text-align: center;
@@ -28,54 +30,60 @@ h2 {
 }
 .pricing-table {
     background-color: var(--white);
-    /* outline: .25rem solid green; */
     display: flex;
     position: relative;
     z-index: -1;
-    margin: 4% 20%;
+    margin: 6% auto;
     border-radius: 26px;
-    /* max-width: 62rem;
-    max-height: 39rem; */
+    width: 68rem;
+    height: 39rem;
 }
 .pricing-table > * {
     flex: 1;
 }
 .platform-card {
     background-color: var(--white);
-    /* outline: .25rem solid red; */
     display: flex;
     z-index: 1;
-    margin: auto;
+    margin: 2rem auto;
     border-radius: 26px;
-    padding: 3rem 2rem 0rem;
-    /* position: relative; */
-    align-self: stretch;
+    justify-content: center;
+    width: 15rem;
+}
+.content {
     height: 38rem;
-    width: 20rem;
+    width: 15rem;
+    margin: 0rem; 
+}
+.popular-content {
+    height: 38rem;
+    width: 18rem;
+    margin-top: 0.75rem;
 }
 .popular-card {
-    /* outline: .25rem solid purple; */
+    background-image: url('./images/image.png');
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0px 27px 32px 0px;
+    position: relative;
+    top: -4rem;
+    z-index: 2;
     display: flex;
-    z-index: 1;
     margin: auto;
-    height: 38rem;
-    width: 20rem;
-    padding: 1.2rem; 
+    height: 35rem;
+    width: 18rem;
+    padding: 1.2rem;
+    justify-content: center; 
 }
 .event-card {
     border-radius: 26px;
-    /* position: relative; */
-    padding: 3rem 2rem 0rem;
-    height: 38rem;
-    width: 20rem;
+    background-color: var(--white);
+    padding-top: 3.2rem;
+    justify-content: center;
+    width: 15rem;
     display: flex;
     z-index: 1;
 }
-
-/* .content {
-    outline: .05rem solid purple;
-    flex-grow: 1;
-} */
 .price-container {
     color: var(--dkgray);
 }
@@ -98,6 +106,7 @@ h2 {
     color: var(--dkgray);
     font-weight: 500;
     margin-bottom: 2rem;
+    width: 17rem;
 }
 .features ul {
     color: var(--dkgray);
@@ -105,13 +114,13 @@ h2 {
     list-style: none;
     list-style-position: outside;
     padding-left: 0rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
+    width: 16rem;
 }
 .features li {
     font-weight: 500;
-    margin: 1rem;
     display: flex;
-    margin-left: 0rem;
+    margin: 0rem 0rem 1rem;
 }
 .features li::before {
     content: url('images/gray-dark-check.svg');
@@ -120,21 +129,37 @@ h2 {
 .features .white li::before {
     content: url('images/white-check-darkbg.svg');
 }
+#solution-link {
+    color: var(--white);
+}
+#event-link {
+    color: var(--teal);
+    margin: 0rem 0rem;
+}
+#partner-link {
+    color: var(--dkblue);
+    margin: 0rem 0rem;
+}
 .features .btn {
-    background-color: var(--dkgray);
+    background-color: var(--ltgray);
     color: var(--dkblue);
     font-weight: 700;
     text-decoration: none;
     border-radius: 8px;
-    width: 25rem;
+    width: 10rem;
     height: 1.6rem;
     padding: 1rem 2rem;
-    position: relative;
-    align-self: center;
+    text-align: center;
+    display: inline-block;
+}
+.event-card .btn {
+    margin-top: -0.75rem;
 }
 .trial {
     color: var(--dkgray);
     font-weight: 500;
+    margin-top: 1.5rem;
+    margin-left: 3rem;
 }
 .trial a {
     color: var(--dkgray);
@@ -143,25 +168,14 @@ h2 {
 .popular-card .white {
     color: var(--white);
 }
-.popular-card {
-    background-image: url('./images/image.png');
-    background-size: cover;
-    border-radius: 5px;
-    box-shadow: 0px 27px 32px 0px;
-    position: relative;
-    top: -2rem;
-    z-index: 2;
-    max-width: 22rem;
-    max-height: 37rem;
-}
 .popular-tag {
     font-size: 0.67rem;
-    width: 8.6rem;
+    width: 18rem;
     height: 2rem;
-    margin-left: 8.5rem;
+    margin-left: 10rem;
     background: var(--purple);
     color: var(--white);
-    border-radius: 4px;
+    border-radius: 5px;
     padding: 0.67rem;
     text-align: center;
     font-weight: 700;
@@ -169,12 +183,31 @@ h2 {
 }
 .popular-btn {
     background-color: var(--teal);
-    width: 16rem;
-    height: 1.6rem;
+    width: 11rem;
+    height: 1.5rem;
     padding: 1rem 3.5rem;
     border-radius: 8px;
     color: var(--dkblue);
     font-weight: 700;
     text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    margin: 0rem 3rem 0rem 0rem;
 }
 
+@media (max-width: 960px) {
+.pricing-table {
+    background-color: var(--ltgray);
+    position: absolute;
+    z-index: -1;
+}
+.platform-card {
+    display: absolute;
+}
+.popular-card {
+    display: absolute;
+}
+.event-card {
+    display: absolute;
+}
+}
