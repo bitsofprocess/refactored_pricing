@@ -200,8 +200,9 @@ h2 {
     background-color: var(--ltgray);
     position: absolute;
     z-index: -1;
+    flex-direction: column;
 }
-.platform-card {
+/* .platform-card {
     display: absolute;
 }
 .popular-card {
@@ -209,5 +210,5 @@ h2 {
 }
 .event-card {
     display: absolute;
-}
+} */
 }
