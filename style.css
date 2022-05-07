@@ -48,7 +48,7 @@ h2 {
     margin: 2rem auto;
     border-radius: 26px;
     justify-content: center;
-    width: 15rem;
+    width: 20rem;
 }
 .content {
     height: 38rem;
@@ -80,7 +80,7 @@ h2 {
     background-color: var(--white);
     padding-top: 3.2rem;
     justify-content: center;
-    width: 15rem;
+    width: 20rem;
     display: flex;
     z-index: 1;
 }
@@ -135,6 +135,7 @@ h2 {
 #event-link {
     color: var(--teal);
     margin: 0rem 0rem;
+    outline: 1px solid red;
 }
 #partner-link {
     color: var(--dkblue);
@@ -196,19 +197,35 @@ h2 {
 }
 
 @media (max-width: 960px) {
-.pricing-table {
-    background-color: var(--ltgray);
-    position: absolute;
-    z-index: -1;
-    flex-direction: column;
-}
-/* .platform-card {
-    display: absolute;
-}
-.popular-card {
-    display: absolute;
-}
-.event-card {
-    display: absolute;
-} */
+    .body {
+        justify-content: center;
+    }
+    .pricing-table-container {
+        max-width: 20rem;
+        justify-content: center;
+        outline: 1px solid blue;
+        margin: 10% auto;
+    }
+    .pricing-table {
+        background-color: var(--ltgray);
+        position: relative;
+        z-index: -1;
+        flex-direction: column;
+        max-width: 20rem;
+        outline: 1px solid red;
+    }
+      .pricing-table > * {
+        flex-basis: 100%;
+        /* max-width: 20rem; */
+      }
+      .platform-card {
+          margin-top: 40rem;
+      }
+    .popular-card {
+        position: absolute;
+        margin-top: 4rem;
+    }
+    .event-card {
+        display: absolute;
+    } 
 }
