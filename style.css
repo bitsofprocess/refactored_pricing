@@ -134,12 +134,9 @@ h2 {
 }
 #event-link {
     color: var(--teal);
-    margin: 0rem 0rem;
-    outline: 1px solid red;
 }
 #partner-link {
     color: var(--dkblue);
-    margin: 0rem 0rem;
 }
 .features .btn {
     background-color: var(--ltgray);
@@ -184,7 +181,7 @@ h2 {
 }
 .popular-btn {
     background-color: var(--teal);
-    width: 11rem;
+    width: 10rem;
     height: 1.5rem;
     padding: 1rem 3.5rem;
     border-radius: 8px;
@@ -193,7 +190,7 @@ h2 {
     text-decoration: none;
     display: inline-block;
     text-align: center;
-    margin: 0rem 3rem 0rem 0rem;
+    margin: 0rem 3rem 0rem 0.5rem;
 }
 
 @media (max-width: 960px) {
@@ -203,7 +200,6 @@ h2 {
     .pricing-table-container {
         max-width: 20rem;
         justify-content: center;
-        outline: 1px solid blue;
         margin: 10% auto;
     }
     .pricing-table {
@@ -212,20 +208,22 @@ h2 {
         z-index: -1;
         flex-direction: column;
         max-width: 20rem;
-        outline: 1px solid red;
     }
       .pricing-table > * {
         flex-basis: 100%;
-        /* max-width: 20rem; */
       }
       .platform-card {
-          margin-top: 40rem;
+        margin-top: 40rem;
+        padding-top: 2rem;
       }
     .popular-card {
         position: absolute;
         margin-top: 4rem;
+        box-shadow: 0px 10px 32px 0px;
     }
     .event-card {
         display: absolute;
+        padding-top: 2rem;
+        max-height: 36rem;
     } 
 }
