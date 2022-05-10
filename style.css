@@ -5,6 +5,8 @@
     --purple: #722F82;
     --teal: #4bf0bf;
     --white: #fff;
+    --ltgreen: #94e864;
+    --hovergray: #d2d9d7;
 }
 html {
     font-size: 15px;
@@ -153,6 +155,9 @@ h2 {
 .event-card .btn {
     margin-top: -0.75rem;
 }
+.features .btn:hover {
+    background-color: var(--hovergray);
+}
 .trial {
     color: var(--dkgray);
     font-weight: 500;
@@ -191,6 +196,9 @@ h2 {
     display: inline-block;
     text-align: center;
     margin: 0rem 0rem 0rem 0.5rem;
+}
+.popular-btn:hover {
+    background-color: #94e864;
 }
 
 @media (max-width: 960px) {
