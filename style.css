@@ -213,17 +213,20 @@ h2 {
         flex-basis: 100%;
     }
     .platform-card {
+        position: relative;
+        top: 42rem;
         margin-top: 40rem;
         padding-top: 2rem;
     }
     .popular-card {
         position: absolute;
-        margin-top: 4rem;
+        margin-top: 5rem;
         box-shadow: 0px 10px 32px 0px;
     }
     .event-card {
-        display: absolute;
+        position: relative;
         padding-top: 2rem;
         max-height: 36rem;
+        bottom: 41rem;
     } 
 }
