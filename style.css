@@ -190,7 +190,7 @@ h2 {
     text-decoration: none;
     display: inline-block;
     text-align: center;
-    margin: 0rem 3rem 0rem 0.5rem;
+    margin: 0rem 3rem 0rem rem;
 }
 
 @media (max-width: 960px) {
@@ -209,13 +209,13 @@ h2 {
         flex-direction: column;
         max-width: 20rem;
     }
-      .pricing-table > * {
+    .pricing-table > * {
         flex-basis: 100%;
-      }
-      .platform-card {
+    }
+    .platform-card {
         margin-top: 40rem;
         padding-top: 2rem;
-      }
+    }
     .popular-card {
         position: absolute;
         margin-top: 4rem;
