@@ -61,6 +61,7 @@ h2 {
     height: 38rem;
     width: 18rem;
     margin-top: 0.75rem;
+    padding-left: 1rem;
 }
 .popular-card {
     background-image: url('./images/image.png');
@@ -116,8 +117,8 @@ h2 {
     list-style: none;
     list-style-position: outside;
     padding-left: 0rem;
-    margin-bottom: 3rem;
-    width: 16rem;
+    margin-bottom: 2rem;
+    max-width: 15rem;
 }
 .features li {
     font-weight: 500;
@@ -146,14 +147,17 @@ h2 {
     font-weight: 700;
     text-decoration: none;
     border-radius: 8px;
-    width: 10rem;
+    width: 10.5rem;
     height: 1.6rem;
     padding: 1rem 2rem;
+    margin-left: 0.2rem;
     text-align: center;
     display: inline-block;
 }
 .event-card .btn {
-    margin-top: -0.75rem;
+    margin: -0.5rem auto;
+    max-width: 15rem;
+    margin-left: 0.2rem;
 }
 .features .btn:hover {
     background-color: var(--hovergray);
@@ -175,7 +179,7 @@ h2 {
     font-size: 0.67rem;
     width: 18rem;
     height: 2rem;
-    margin-left: 10rem;
+    margin-left: 9rem;
     background: var(--purple);
     color: var(--white);
     border-radius: 5px;
@@ -186,7 +190,7 @@ h2 {
 }
 .popular-btn {
     background-color: var(--teal);
-    width: 10rem;
+    width: 8.5rem;
     height: 1.5rem;
     padding: 1rem 3.5rem;
     border-radius: 8px;
@@ -195,10 +199,10 @@ h2 {
     text-decoration: none;
     display: inline-block;
     text-align: center;
-    margin: 0rem 0rem 0rem 0.5rem;
+    margin: 0rem 0rem 0rem 0.3rem;
 }
 .popular-btn:hover {
-    background-color: #94e864;
+    background-color: var(--ltgreen);
 }
 
 @media (max-width: 960px) {
@@ -236,4 +240,7 @@ h2 {
         max-height: 36rem;
         bottom: 41rem;
     } 
+    .event-card .btn {
+        margin: 1rem auto;
+    }
 }
