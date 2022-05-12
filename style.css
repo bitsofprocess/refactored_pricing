@@ -34,7 +34,6 @@ h2 {
     background-color: var(--white);
     display: flex;
     position: relative;
-    z-index: -1;
     margin: 6% auto;
     border-radius: 26px;
     width: 61rem;
@@ -193,10 +192,10 @@ h2 {
     width: 8.5rem;
     height: 1.5rem;
     padding: 1rem 3.5rem;
-    border-radius: 8px;
     color: var(--dkblue);
     font-weight: 700;
     text-decoration: none;
+    border-radius: 8px;
     display: inline-block;
     text-align: center;
     margin: 0rem 0rem 0rem 0.3rem;
@@ -217,7 +216,6 @@ h2 {
     .pricing-table {
         background-color: var(--ltgray);
         position: relative;
-        z-index: -1;
         flex-direction: column;
         max-width: 20rem;
     }
@@ -240,7 +238,7 @@ h2 {
         max-height: 36rem;
         bottom: 41rem;
     } 
-    .event-card .btn {
+    /* .event-card .btn {
         margin: 1rem auto;
-    }
+    } */
 }
